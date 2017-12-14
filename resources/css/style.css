@@ -1,0 +1,177 @@
+/* Universal Styles */
+html {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+
+/* Header */
+header {
+  background-color: white;
+  color: black;
+}
+
+header .colmar {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+header .content {
+  display: flex;
+  height: 4rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 3rem;
+  margin-top: 2rem;
+
+}
+
+header nav ul li {
+  padding-left: 0.75rem;
+
+}
+
+header nav {
+  position: absolute;
+  right: 2rem;
+}
+
+header nav a {
+  vertical-align: bottom;
+  color: black;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  header .desktop {
+    display: none;
+
+  }
+
+  header .content {
+    height: 4rem;
+  }
+
+  header .colmar {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+/* Learn Something section */
+#learnsomething-container {
+  background-color: gainsboro;
+  display: flex;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+#learnsomething-container .image-container {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#learnsomething-container .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.learnsomething-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  width: 40%;
+
+}
+
+.learnsomething-text {
+  color: dimgray;
+  max-width: 100%;
+  height: auto;
+}
+
+.learnsomething-box .button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: dimgray;
+  color: white;
+  width: 30%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  #learnsomething-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #learnsomething-container .image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .learnsomething-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .learnsomething-box .button {
+    margin-left: 0;
+    width: 50%;
+  }
+}
+
+/* Information Section */
+#information-container {
+  display: flex;
+}
+
+.information-image {
+  width: 60%;
+}
+
+.information-image img {
+  width: 100%;
+}
+
+.orientation-campus-guest {
+  display: flex;
+  flex-direction: column;
+}
