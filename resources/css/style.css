@@ -57,34 +57,6 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 450px) {
-  header .desktop {
-    display: none;
-
-  }
-
-  header .content {
-    height: 4rem;
-  }
-
-  header .colmar {
-    display: none;
-  }
-
-  header .mobile {
-    display: block;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-}
-
 /* Learn Something section */
 #learnsomething-container {
   background-color: gainsboro;
@@ -132,6 +104,280 @@ header .mobile {
   text-align: center;
 }
 
+/* Information Section (Keep Practicing)*/
+#information-container {
+  display: flex;
+  width: 100%;
+  color: dimgray;
+}
+
+#information-container .practicing-image {
+
+}
+
+
+.practicing {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+
+}
+
+.practicing-image {
+
+}
+
+.practicing img {
+  max-width: 100%;
+  margin: auto;
+  height: 37rem;
+
+}
+
+.practicing-text {
+  margin-top: 2rem;
+}
+
+.curabitur {
+  margin-top: 1.5rem;
+}
+
+.name {
+  margin-top: 4rem;
+}
+
+.orientation-campus-guest {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  width: 40%;
+  overflow: hidden;
+
+}
+
+.orientation-box, .campus-box, .guest-box {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+
+}
+
+.orientation-image img, .campus-image img, .guest-image img {
+  margin-right: 1rem;
+  width: 15rem;
+}
+
+.orientation-text, .campus-text, .guest-text {
+  min-width: 40rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+
+}
+
+.guest-box {
+  background-color: gainsboro;
+}
+
+.orientation-image, .campus-image, .guest-image {
+  padding: 1rem;
+  width: 35%;
+}
+
+.orientation-campus-guest-mobile {
+  display: none;
+}
+
+/* Start learning section */
+
+#startlearning {
+  background-color: gainsboro;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: dimgray;
+  padding-bottom: 2rem;
+}
+
+.software-box, .data-box, .computer-box, .business-box {
+  margin-right: 2rem;
+}
+
+.software-text h2, .computer-text h2, .design-text h2, .data-text h2,
+.business-text h2, .marketing-text h2 {
+  font-weight: bolder;
+}
+
+.software-text h3, .computer-text h3, .design-text h3, .data-text h3,
+.business-text h3, .marketing-text h3 {
+  font-weight: lighter;
+}
+
+.software-text, .design-text, .data-text,
+.business-text, .marketing-text {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.computer-text {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 0.03rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.startlearning-header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.group-one {
+  display: flex;
+}
+
+.group-two {
+  display: flex;
+}
+
+.startlearning-mobile {
+  display: none;
+}
+
+/* Thesis section */
+
+#thesis {
+  color: dimgray;
+  margin-bottom: 2rem;
+}
+
+.thesis-header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.thesis-main {
+  display: flex;
+}
+
+.group-uno {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.thesis-video video {
+  width: 100%;
+}
+
+.group-dos {
+  width: 40%;
+}
+
+.fisma-box, .now-box {
+  display: flex;
+  padding: 1rem;
+}
+
+.fisma-box {
+  background-color: gainsboro;
+}
+
+.fisma-image img, .now-image img {
+
+}
+
+.fisma-text, .now-text {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.fisma-text h3, .now-text h3 {
+  font-weight: bolder;
+}
+
+.fisma-text h4, .now-text h4 {
+  font-weight: lighter;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Footer section */
+
+footer {
+  display: flex;
+  color: dimgray;
+}
+
+.copyright {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.terms nav ul {
+  display: flex;
+  margin-left: 1rem;
+  list-style-type: none;
+  position: absolute;
+  right: 3rem;
+  margin-top: 2rem;
+}
+
+.terms nav ul li {
+  margin-left: 1rem;
+}
+
+.terms nav a {
+  color: dimgray;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 450px) {
+
+  body {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  header .desktop {
+    display: none;
+
+  }
+
+  header .content {
+    height: 4rem;
+  }
+
+  header .colmar {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   #learnsomething-container {
     display: flex;
@@ -155,23 +401,117 @@ header .mobile {
   .learnsomething-box .button {
     margin-left: 0;
     width: 50%;
+    margin-bottom: 2rem;
   }
 }
 
-/* Information Section */
-#information-container {
-  display: flex;
+@media only screen and (max-width: 450px) {
+  .practicing {
+    display: none;
+  }
+
+  .orientation-campus-guest {
+    display: none;
+  }
+
+  .orientation-campus-guest-mobile {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .box {
+    display: block;
+
+  }
+
+  .orientation-text, .campus-text, .guest-text {
+    margin-top: 0;
+  }
+
+  .guest-text {
+    padding-bottom: 1rem;
+  }
+
+  .orientation-image, .campus-image, .guest-image {
+    margin-bottom: 0;
+
+  }
+
+  .orientation-image img, .campus-image img, .guest-image img {
+    width: 23rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+  }
 }
 
-.information-image {
-  width: 60%;
+@media only screen and (max-width: 450px) {
+
+  #startlearning {
+    background-color: white;
+  }
+
+  .startlearning-mobile {
+    display: block;
+
+  }
+
+  #startlearning .group-one {
+    display: none;
+  }
+
+  #startlearning .group-two {
+    display: none;
+  }
+
+  .software, .computer, .design, .data, .business, .marketing {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    background-color: gainsboro;
+    margin-left: 1rem;
+
+  }
 }
 
-.information-image img {
-  width: 100%;
-}
+@media only screen and (max-width: 450px) {
 
-.orientation-campus-guest {
-  display: flex;
-  flex-direction: column;
+  #thesis .group-dos {
+    display: none;
+  }
+
+  .group-uno {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  #thesis {
+    width: 100%;
+  }
+
+  .thesis-main {
+    width: 100%;
+  }
+
+  .thesis-video {
+    width: 100%;
+  }
+
+  .thesis-video video {
+    width: 100%;
+  }
+
+  .thesis-text {
+    display: none;
+  }
+
+  .terms nav ul {
+    display: none;
+  }
 }
